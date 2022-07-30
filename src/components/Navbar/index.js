@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 import logo from '../images/logo.png'
 
@@ -15,15 +15,12 @@ const Navbar = ({ toggle }) => {
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
-                        <NavItem>
-                            <NavLinks to='about'>About</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='projects'>Projects</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='contact'>Contact</NavLinks>
-                        </NavItem>
+                        <NavLinks to='about'>About</NavLinks>
+
+                        <NavLinks to='projects'>Projects</NavLinks>
+
+                        <NavLinks to='contact'>Contact</NavLinks>
+
                     </NavMenu>
                 </NavbarContainer>
             </Nav>

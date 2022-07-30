@@ -6,8 +6,9 @@ import { useState } from 'react'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const toggle = () => {
+    const toggle = (val) => {
         setIsOpen(!isOpen);
+        console.log(val)
     }
 
 
