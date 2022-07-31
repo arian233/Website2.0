@@ -10,11 +10,12 @@ export const Body = () => {
     return (
         <BodyContainer>
             <ProjectContent>
-                <ProjectText>Here are some of the projects I have implemented:</ProjectText>
+                <ProjectText>Projects</ProjectText>
                 <Projects>
                     <Proj1>
                         <a href="https://github.com/arian233/SudokuGame" target="_blank">
                             <SudoImage src={Sudoku}></SudoImage> </a>
+                        <p>An Android application where users can learn new languages by playing Sudoku</p>
                     </Proj1>
                     <Proj2>
                         <SudoImage src={Img2}></SudoImage>
@@ -25,13 +26,13 @@ export const Body = () => {
                     <Proj4>
                         <SudoImage src={Img4}></SudoImage>
                     </Proj4>
-                    <OtherProj>
-                        Find out about my other projects on my github:
-                        <a href="https://github.com/arian233" target="_blank">
-                            <img width="2%" src={GitLogo}></img>
-                        </a>
-                    </OtherProj>
                 </Projects>
+                <OtherProj>
+                    <h4>Please cheack my Github for more projects</h4>
+                    <a href="https://github.com/arian233" target="_blank">
+                        <img width="2%" src={GitLogo}></img>
+                    </a>
+                </OtherProj>
             </ProjectContent>
         </BodyContainer >
     )
